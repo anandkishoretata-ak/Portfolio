@@ -10,14 +10,17 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+  
+  <>
+      <div id="top">
+  <Navbar />
+  <Hero />
+  <About />
+  <Skills />
+  <Projects />
+  <Contact />
+  <Footer />
+</div>
     </>
   );
 }
