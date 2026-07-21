@@ -19,7 +19,11 @@ function Hero() {
 />
        
 
-        <h1>Tata Anand Kishore</h1>
+        
+        <h1 className="hero-name">
+  Tata Anand Kishore
+</h1>
+
         <TypeAnimation
   sequence={[
     "MERN Stack Developer",
@@ -70,20 +74,7 @@ function Hero() {
     </section>
   );
 }
-import { motion } from "framer-motion";
 
-<motion.img
-  src="/anand.jpg"
-  alt="Tata Anand Kishore"
-  className="profile-image"
-  animate={{
-    y: [0, -15, 0],
-  }}
-  transition={{
-    duration: 3,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-/>
+
 
 export default Hero;
