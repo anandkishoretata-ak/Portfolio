@@ -1,4 +1,3 @@
-
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -12,39 +11,41 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-       <img
-       src="/anand.jpg"
-       alt="Tata Anand Kishore"
-       className="profile-image"
-/>
-       
+        {/* Profile Image */}
+        <img
+          src={`${import.meta.env.BASE_URL}anand.jpg`}
+          alt="Tata Anand Kishore"
+          className="profile-image"
+        />
 
-        
+        {/* Name */}
         <h1 className="hero-name">
-  Tata Anand Kishore
-</h1>
+          Tata Anand Kishore
+        </h1>
 
+        {/* Typing Animation */}
         <TypeAnimation
-  sequence={[
-    "MERN Stack Developer",
-    2000,
-    "React Developer",
-    2000,
-    "Frontend Developer",
-    2000,
-    "Backend Developer",
-    2000,
-  ]}
-  wrapper="h2"
-  repeat={Infinity}
-  className="typing-text"
-/>
+          sequence={[
+            "MERN Stack Developer",
+            2000,
+            "React Developer",
+            2000,
+            "Frontend Developer",
+            2000,
+            "Backend Developer",
+            2000,
+          ]}
+          wrapper="h2"
+          repeat={Infinity}
+          className="typing-text"
+        />
 
         <p>
           Building modern web applications with React,
           Node.js, Express.js and MongoDB.
         </p>
 
+        {/* Social Icons */}
         <div className="social-icons">
           <a
             href="https://github.com/anandkishoretata-ak"
@@ -67,14 +68,17 @@ function Hero() {
           </a>
         </div>
 
-        <a href="/Tata_Anand_Kishore_Resume.pdf" download className="btn">
+        {/* Resume Button */}
+        <a
+          href={`${import.meta.env.BASE_URL}Tata_Anand_Kishore_Resume.pdf`}
+          download
+          className="btn"
+        >
           Download Resume
         </a>
       </motion.div>
     </section>
   );
 }
-
-
 
 export default Hero;

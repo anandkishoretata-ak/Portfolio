@@ -4,7 +4,7 @@ function Projects() {
       title: "Online Banking System",
       description:
         "Banking application with deposit, withdraw, transfer and transaction history.",
-      image: "/Projects/banking.png",
+      image: `${import.meta.env.BASE_URL}Projects/banking.png`,
       github:
         "https://github.com/anandkishoretata-ak/Online-Banking-System",
     },
@@ -12,7 +12,7 @@ function Projects() {
       title: "Quiz Application",
       description:
         "Quiz application with score tracking and multiple categories.",
-      image: "/Projects/quiz.png",
+      image: `${import.meta.env.BASE_URL}Projects/quiz.png`,
       github:
         "https://github.com/anandkishoretata-ak/Quiz-Application",
     },
@@ -20,7 +20,7 @@ function Projects() {
       title: "MedTrack",
       description:
         "AWS-based healthcare management system.",
-      image: "/Projects/medtrack.png",
+      image: `${import.meta.env.BASE_URL}Projects/medtrack.png`,
       github:
         "https://github.com/anandkishoretata-ak/MedTrack",
     },
@@ -28,7 +28,7 @@ function Projects() {
       title: "Placement Management System",
       description:
         "Student placement tracking and management platform.",
-      image: "/Projects/placement.png",
+      image: `${import.meta.env.BASE_URL}Projects/placement.png`,
       github:
         "https://github.com/anandkishoretata-ak/Placement-Management-System",
     },
